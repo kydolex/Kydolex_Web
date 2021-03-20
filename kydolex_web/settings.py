@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'widget_tweaks',
     'kydolex_app',
+    'django_static_jquery',
     
 ]
 
