@@ -5,9 +5,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
     <title>Kydolex</title>
     <link rel="shortcut icon" href="{%static 'img/Kydolex.png'%}">
@@ -24,29 +25,32 @@
                 </div>
                 <div class="header_right">
                     <a class="header_list" href="{% url 'contact'%}">Contact<br><span class="under">お問い合わせ</span></a>
-                    <a class="header_list" href="{% url 'service'%}">Service<br><span class="under">事業内容</span</a>
+                    <a class="header_list" href="{% url 'service'%}">Service<br><span class="under">事業内容</span></a>
                     <a class="header_list" href="{% url 'about'%}">Kydolex<br><span class="under">Kydolexについて</span></a>
                     <a class="header_list" href="{% url 'designlist'%}">Library<br><span class="under">作品一覧</span></a>
                     <a class="header_list" href="/">Home<br><span class="under">ホーム</span></a>
                 </div>
         </div> 
+
+        <header>
+            <div class="header-contents">
+                <a class="header_icon2" href="/"><img class="kydolex_header_log" src="{%static 'img/kydolex_white.png'%}" alt=""></a>
+                <div id="menu_btn"><i class="fas fa-bars my-gray"></i></div>
+            </div><!-- /.header-contents -->
+        </header>
         
-        <div id="menu">
-            <div>
-                <a class="header_icon" href="/"><img class="kydolex_header_log" src="{%static 'img/kydolex_white.png'%}" alt=""></a>
-                <a href="#menu" class="menuopen"><img class="header_icon_menu" src="{%static 'img/header_line_3.png'%}" alt=""></a>
-                <a href="#close" class="menuclose"><img class="header_icon_menu" src="{%static 'img/header_chanel.png'%}" alt=""></a>
-
-                </div>
+          <div id="menu">
             <ul>
-                <li><a class="header_list" href="/">Home<br><span class="under">ホーム</span></a></li>
-                <li><a class="header_list" href="{% url 'designlist'%}">Library<br><span class="under">作品一覧</span></a></li>
-                <li><a class="header_list" href="{% url 'about'%}">Kydolex<br><span class="under">Kydolexについて</span></a></li>
-                <li><a class="header_list" href="{% url 'service'%}">Service<br><span class="under">事業内容</span></a></li>
-                <li><a class="header_list" href="{% url 'contact'%}">Contact<br><span class="under">お問い合わせ</span></a></li>
+              <a href="/"><li class="hover_black_back">ホーム</li></a>
+              <a href="{% url 'designlist'%}"><li>作品一覧</li></a>
+              <a href="{% url 'about'%}"><li>Kydolexについて</li></a>
+              <a href="{% url 'service'%}"><li>事業内容</li></a>
+              <a href="{% url 'contact'%}"><li>お問い合わせ</li></a>
             </ul>
-        </div>
+          </div>
+          <div class="menu-background"></div>
 
+         
         <!--Homeタイトル-->
         <div class="slide"> 
             <img src="{%static 'img/kydolex_home_title.png'%}" alt="">
@@ -241,24 +245,24 @@
         </div>
 
         <!--Bussiness-->
-            <div class="item_class">
+            <div class="item_class background_gray2">
                 <div class="title_class">
                     <div class="middle_title">Business・Activities</div>
                     <div class="middle_title_sub">事業・活動一覧</div>
                 </div>
-    
+                
                 <div class="width_box_40">
-                    <div class="middle_title_sub text_black">３ページWeb作成</div>
-                    <h3 class="text_basic_bold">
-                        ３ページだけのWeb作成事業です。開発相談から公開までを全て一括でサポートします。
-                        通常Web作成を企業に頼むと相談、デザイン、コーディング、
-                        デプロイ、ドメイン発行、QR取得までかなりの時間とコストがかかります。
-                        またサーバーを契約する手間隙もかかります。 <br>
-                        ３ページWeb作成では公開までの全てをサポートし、さらに１週間で公開をします。<br>
-                        また個人の方にも優しい料金の5万円（目安）でサーバー管理もKydolexが管理するので無駄な手間暇や
-                        Webに詳しく無い方でも簡単にWebサイトをご気軽に依頼することができます。
-                    </h3>
-                    <a class="buttom_link simple_hover_red" href="">詳細へ進む</a>
+                         <div class="middle_title_sub text_black">３ページWeb作成</div>
+                        <h3 class="text_basic_bold text_black">
+                            ３ページだけのWeb作成事業です。開発相談から公開までを全て一括でサポートします。
+                            通常Web作成を企業に頼むと相談、デザイン、コーディング、
+                            デプロイ、ドメイン発行、QR取得までかなりの時間とコストがかかります。
+                            またサーバーを契約する手間隙もかかります。 <br>
+                            ３ページWeb作成では公開までの全てをサポートし、さらに１週間で公開をします。<br>
+                            また個人の方にも優しい料金の5万円（目安）でサーバー管理もKydolexが管理するので無駄な手間暇や
+                            Webに詳しく無い方でも簡単にWebサイトをご気軽に依頼することができます。
+                        </h3>
+                        <a class="buttom_link simple_hover_red" href="">詳細へ進む</a>
                 </div>
                 <img class="width_box_30" src="{%static 'img/3P作成.png'%}" alt="">
                 
@@ -266,7 +270,7 @@
 
 
         <!--Link-->
-            <div id="et_link" class="item_class back_white_2"　>
+            <div id="et_link" class="item_class"　>
                 <div class="title_class">
                     <div class="middle_title">External link</div>
                     <div class="middle_title_sub">外部リンク</div>
@@ -394,14 +398,35 @@
 
     {% block extra_js %}
     <script>
-        $(function() {
-            const hum = $('#hamburger, .close')
-            const nav = $('.sp-nav')
-            hum.on('click', function(){
-                nav.toggleClass('toggle');
-            });
+        // メインコンテンツをヘッダーの高さ分だけずらす
+        var headerHeight = $('header').outerHeight();
+        $('main').css('padding-top', headerHeight + 'px');
+        $('#menu').css('margin-top', headerHeight + 'px');
+
+        // MENUボタンがクリックされたときの処理
+        $('#menu_btn').on('click', function(){
+        if($(this).hasClass('active')) {
+            $(this).removeClass('active');
+            $(this).html('<i class="fas fa-bars my-gray"></i>');
+            $('#menu').removeClass('open');
+            $('.menu-background').removeClass('open');
+        } else {
+            $(this).addClass('active');
+            $(this).html('<i class="fas fa-times my-gray"></i>');
+            $('#menu').addClass('open');
+            $('.menu-background').addClass('open');
+        }
         });
-        
+
+        // メニューの背景がクリックされたときの処理
+        $('.menu-background').on('click', function(){
+        if($(this).hasClass('open')) {
+            $(this).removeClass('open');
+            $('#menu_btn').removeClass('active').text('MENU');
+            $('#menu').removeClass('open');
+        }
+        });
+
     </script>
     {% endblock %}
 </body>
