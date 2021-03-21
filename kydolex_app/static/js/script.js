@@ -1,11 +1,5 @@
 window.onload = function() {
     $(function(){
-        var headerHeight = $('header').outerHeight();
-        $('main').css('padding-top', headerHeight + 'px');
-        $('#menu').css('margin-top', headerHeight + 'px');
-    });
-
-    $(function(){
         // MENUボタンがクリックされたときの処理
         $('#menu_btn').on('click', function(){
         if($(this).hasClass('active')) {
@@ -26,7 +20,7 @@ window.onload = function() {
         $('.menu-background').on('click', function(){
         if($(this).hasClass('open')) {
             $(this).removeClass('open');
-            $('#menu_btn').removeClass('active').text('MENU');
+            $('#menu_btn').removeClass('active').html('<i class="fas fa-bars my-gray"></i>');
             $('#menu').removeClass('open');
         }
         });
