@@ -121,7 +121,6 @@ USE_TZ = True
 ALLOWED_HOSTS = ['*']
 STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # デプロイ設定
 DEBUG = False
