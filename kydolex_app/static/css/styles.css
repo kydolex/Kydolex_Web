@@ -127,6 +127,7 @@ main {
   #menu {
     width: 100%;
     max-width: 250px;
+    margin: 70px 0px 0px 0px;
     height: 100%;
     background-color: #5d5d5d;
     position: fixed;
@@ -261,17 +262,53 @@ main {
   text-align: center;
   width: 100%;
   padding:0% 5%;
-  margin: 2% 0%;
+}
+.item_class2{
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  width: 29%;
+  margin:3% 0%;
 }
 .title_class{
   position: relative;
   display: inline-block;
   text-align: center;
   width: 100%;
-  margin: 6% 0% 3% 0%;;
+  margin: 6% 0% 1% 0%;;
 }
 .back_black{
   background-color: rgb(39, 39, 39);
+}
+.back_blue{
+  background-color: rgb(234, 238, 255);
+}
+.back_green{
+  background-color: rgb(196, 219, 200);
+}
+.back_light_green{
+  background-color: rgb(231, 255, 223);
+}
+.back_yellow{
+  background-color: rgba(255, 255, 0, 0.139);
+}
+.back_red{
+  background-color: rgb(255, 232, 232);
+}
+.back_light_blue{
+  background-color: rgb(230, 249, 255);
+}
+.back_orage{
+  background-color: rgb(255, 239, 220);
+}
+.back_pink{
+  background-color: rgb(255, 230, 253);
+}
+.back_purple{
+  background-color: rgba(144, 0, 255, 0.089);
+}
+.back_light_black{
+  background-color: rgb(238, 238, 238);
 }
 .back_black_dark{
   background-color: rgb(0, 0, 0);
@@ -311,7 +348,7 @@ main {
   display: inline-block;
   width: 100%;
   line-height: 1.5em;
-  font: normal normal bold 45px/100% Hiragino Mincho ProN;
+  font: normal normal bold 35px/100% Hiragino Mincho ProN;
   z-index: 3;
 }
 .middle_title_sub{
@@ -423,8 +460,8 @@ main {
 .site_link_form{
   position: relative;
   display: inline-block;
-  height: 200px;
-  width: 230px;
+  height: 220px;
+  width: 250px;
   margin:1% 1% ;
 }
 .site_link{
@@ -432,8 +469,8 @@ main {
   display: inline-block;
   height: 100%;
   width: 100%;
-  border-top: solid 10px #000000;
-  border-bottom: solid 10px #000000;
+  border-top: solid 7px #000000;
+  border-bottom: solid 7px #000000;
   z-index: 1;
 }
 .site_link_title{
@@ -441,14 +478,14 @@ main {
   font: normal normal bold 25px/100% Hiragino Mincho ProN;
   color: #ffffff;
   width: 100%;
-  padding: 70px 0px 0px 0px;
+  padding: 85px 0px 0px 0px;
   z-index: 3;
 }
 .site_link_title_sub{
   position: absolute;
   font: normal normal bold 18px/100% Hiragino Mincho ProN;
   color: #ffffff;
-  padding: 110px 0px 0px 0px;
+  padding: 125px 0px 0px 0px;
   width: 100%;
   z-index: 3;
 }
@@ -474,24 +511,124 @@ main {
   display: inline-block;
   height: 150px;
   width: 330px;
-  margin:0% 1% ;
+  margin:1% 1% ;
 }
 .site_link_title_2{
   position: absolute;
   font: normal normal bold 25px/100% Hiragino Mincho ProN;
   color: #ffffff;
   width: 100%;
-  padding: 40px 0px 0px 0px;
+  padding: 50px 0px 0px 0px;
   z-index: 3;
 }
 .site_link_title_sub_2{
   position: absolute;
-  font: normal normal bold 18px/100% Hiragino Mincho ProN;
+  font: normal normal bold 15px/100% Hiragino Mincho ProN;
   color: #ffffff;
-  padding: 75px 0px 0px 0px;
+  padding: 85px 0px 0px 0px;
   width: 100%;
   z-index: 3;
 }
+.site_link_form_3{
+  position: relative;
+  display: inline-block;
+  width: 400px;
+  margin:1% 3% ;
+  vertical-align: top;
+}
+.site_link_img_3{
+  position: relative;
+  display: inline-block;
+  object-fit: cover;
+  height: 200px;
+  width: 100%;
+}
+.site_link_form_3::after{
+  position:absolute;/*固定配置*/
+  top: 0; 
+  left: 0;/*左上に固定*/
+  width: 100%; height: 100%;/*画面全体を覆う*/
+  content: "";
+  background-color: #ffffff38;
+  z-index: 2;
+}
+.site_link_title_3{
+  position: relative;
+  font: normal normal bold 20px/100% Hiragino Mincho ProN;
+  width: 100%;
+  padding: 20px 0px 5px 0px;
+  z-index: 3;
+}
+.site_link_title_sub_3{
+  position: relative;
+  font: normal normal bold 15px/150% Hiragino Mincho ProN;
+  padding: 5px 20px 10px 20px;
+  width: 100%;
+  z-index: 3;
+}
+.site_link_btn_3{
+  display: inline-block;
+  position: relative;
+  padding:3% 20%;
+  border:solid 1px #1f1f1f;
+  color: #1f1f1f;
+  z-index: 3;
+}
+.site_link_btn_3:hover{
+  background-color: #5527ac;
+  color: #ffffff;
+}
+
+.site_link_4{
+  position: relative;
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-top: solid 0px #000000;
+  border-bottom: solid 0px #000000;
+  z-index: 1;
+}
+.site_link_4::after{
+  position:absolute;/*固定配置*/
+  top: 0; 
+  left: 0;/*左上に固定*/
+  width: 100%; height: 100%;/*画面全体を覆う*/
+  content: "";
+  background-color: #4141417e;
+  z-index: 2;
+}
+.site_link_form_4{
+  position: relative;
+  display: inline-block;
+  height: 100px;
+  width: 330px;
+  margin:1% 1% ;
+}
+.site_link_title_4{
+  position: absolute;
+  font: normal normal bold 20px/100% Hiragino Mincho ProN;
+  color: #ffffff;
+  width: 100%;
+  padding: 25px 0px 0px 0px;
+  z-index: 3;
+}
+.site_link_title_sub_4{
+  position: absolute;
+  font: normal normal bold 15px/100% Hiragino Mincho ProN;
+  color: #ffffff;
+  padding: 55px 0px 0px 0px;
+  width: 100%;
+  z-index: 3;
+}
+.site_link_img_4{
+  position: relative;
+  display: inline-block;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
 .contact_link_form{
   position: relative;
   display: inline-block;
@@ -640,11 +777,16 @@ main {
   z-index: 3;
 }
 /*body*/
+.scroll_right{
+  overflow-x: auto;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
 .buttom_margin{
   position: relative;
   display: inline-block;
   width: 100%;
-  margin-bottom: 8%;
+  margin-bottom: 3%;
 }
 .rectangle_body{
   position: relative;
@@ -679,7 +821,6 @@ main {
   height: 200px;
   margin: 5% 0% 0% 0%;
 }
-
 .about_hover_body{
   position: relative;
   display: inline-block;
@@ -782,12 +923,15 @@ main {
 .panel-group{
   border-top:none;
   background:#eee;
+  width: 70%;
+  display: inline-block;
+  vertical-align: top;
 }
 .panel{
   display:none;
 }
 .tab.is-active{
-  background:rgb(180, 0, 111);
+  background:rgb(180, 0, 120);
   color:#FFF;
   transition: all 0.2s ease-out;
 }
@@ -803,9 +947,9 @@ main {
 .list_box{
   position: relative;
   display: inline-block;
-  width: 310px;
+  width: 380px;
   margin: 3% 2%;
-  background-color: #f1f1f1;
+  background-color: #ffffff;
   vertical-align:top;
 }
 .list_img{
@@ -820,7 +964,7 @@ main {
   position: relative;
   display: inline-block;
   width: 100%;
-  height: 150px;
+  height: 100px;
 }
 .list_box_title{
   position: relative;
@@ -828,7 +972,7 @@ main {
   width: 100%;
   color: #1f1f1f;
   font: normal normal bold 20px/100% Hiragino Mincho ProN;
-  padding:8% 5% 3% 5%;
+  padding:6% 5% 3% 5%;
 }
 .list_box_text{
   position: relative;
